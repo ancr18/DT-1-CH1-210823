@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        
+        h1::before{
+            content: "Binar Academy - ";
+        }
+
+        .container{
+            display: flex;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .h1{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: blueviolet;
+            width: 30%;
+            color: whitesmoke;
+        }
+        .h1:nth-child(even){
+            background-color: #01c38e;
+        }
+        .p {  
+            color: white;
+        }
+        
+        @media (min-width: 600px) and (max-width:992px){
+            body{
+                background: radial-gradient(white, blue);
+            }
+            h1{
+                text-align: center;
+                font-size: 3rem;
+            }
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                box-sizing: border-box;
+                align-content: stretch;
+            }
+            .h1{
+                width: 40%;
+            }
+            .h1:nth-child(odd){
+                background: linear-gradient(to right, red, blue);
+            }
+            .h1:nth-child(even){
+                background: linear-gradient(to left, purple, blue);
+            }
+
+        }
+       
+        @media (max-width: 600px) {
+            body{
+                background: #121212;
+                color: #FFF;
+            }
+
+            h1{
+                text-align: center;
+                color: white;
+            }
+            h1::before{
+                content: "Daily Task 1 - ";
+            }
+
+            .container{
+                background: #181818;
+            }
+
+            .container .h1{
+                background: #3d3d3d;
+                width: 100%;
+            }
+            .p {
+                
+            }
+
+            .p2{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: right; 
+            }
+
+            .p3{
+                text-transform: capitalize;
+            }       
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Hellow FSW 2</h1>
+    <div class="container">
+        <div class="h1 p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic corporis excepturi neque? Dolorum saepe cum magni possimus sed dolore asperiores quidem odio quisquam iusto nemo voluptatum, ullam hic, placeat nisi.</div>
+        <div class="h1 p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic corporis excepturi neque? Dolorum saepe cum magni possimus sed dolore asperiores quidem odio quisquam iusto nemo voluptatum, ullam hic, placeat nisi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, corporis.</div>
+        <div class="h1 p3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic corporis excepturi neque? Dolorum saepe cum magni possimus sed dolore asperiores quidem odio quisquam iusto nemo voluptatum, ullam hic, placeat nisi.</div>
+        <div class="h1 p4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic corporis excepturi neque? Dolorum saepe cum magni possimus sed dolore asperiores quidem odio quisquam iusto nemo voluptatum, ullam hic, placeat nisi.</div>
+        <div class="h1 p5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic corporis excepturi neque? Dolorum saepe cum magni possimus sed dolore asperiores quidem odio quisquam iusto nemo voluptatum, ullam hic, placeat nisi.</div>
+    </div>
+   
+</body>
+</html>
